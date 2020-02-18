@@ -30,6 +30,7 @@
 /* Переменные color */
 :root {
     --color-active: #f06c64;
+    --color-active-border: #ea676b;
     --color-circle: #494e62;
 }
 
@@ -57,6 +58,10 @@ ul {
     width: 100%;
     max-width: 1020px;
     margin: 0 auto;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Стили для header */
