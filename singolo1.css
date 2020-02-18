@@ -123,7 +123,8 @@ ul {
 }
 
 .nav-list__item a {
-    margin: 0 15px;
+    margin: 0 8px;
+    padding: 0 8px;
 }
 
 .nav-list__item:last-child a {
