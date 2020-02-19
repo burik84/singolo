@@ -1,0 +1,23 @@
+{
+  "name": "singolo",
+  "version": "1.0.0",
+  "description": "[RS school](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-2/singolo/part-1/singolo-1-ru.md)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"browser-sync start --server --files '*.css, *.html'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burik84/singolo.git"
+  },
+  "author": "burik84",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burik84/singolo/issues"
+  },
+  "homepage": "https://github.com/burik84/singolo#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
