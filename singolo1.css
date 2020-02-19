@@ -155,6 +155,51 @@ ul {
     border-bottom: 6px solid var(--color-active-border);
 }
 
+.slides {
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.slides::before, .slides::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 27px;
+    background-image: url(./assets/img/slider/icon-chev.png);
+}
+
+.slides::after {
+    right: 0;
+    transform-origin: center;
+    transform: rotate(180deg);
+}
+
+.slide {
+    position: relative;
+    padding-left: 60px;
+}
+
+.slide--vertical {
+    width: 300px;
+}
+
+.slide--horizontal {
+    width: 600px;
+}
+
+.slide--horizontal .slide__img {
+    position: absolute;
+    top: 80px;
+    /* transform: translateY(-50%); */
+}
+
 /* Стили для секции services */
 .services {
     height: 500px;
