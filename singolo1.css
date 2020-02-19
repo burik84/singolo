@@ -44,7 +44,7 @@
 }
 
 body {
-    font-family: 'Lato Regular';
+    font-family: 'Lato Regular', sans-serif;
 }
 
 a, a:hover, a:focus {
@@ -54,6 +54,24 @@ a, a:hover, a:focus {
 
 ul {
     list-style-type: none;
+}
+
+h2, h3 {
+    font-family: "Lato black", sans-serif;
+    color: var(--color-heading);
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    color: var(--color-text);
 }
 
 .header, .slider, .services {
@@ -85,13 +103,6 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.logo span {
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: var(--color-active);
 }
 
 .logo {
@@ -173,6 +184,8 @@ ul {
     width: 16px;
     height: 27px;
     background-image: url(./assets/img/slider/icon-chev.png);
+    cursor: pointer;
+    z-index: 1;
 }
 
 .slides::after {
@@ -197,7 +210,6 @@ ul {
 .slide--horizontal .slide__img {
     position: absolute;
     top: 80px;
-    /* transform: translateY(-50%); */
 }
 
 /* Стили для секции services */
@@ -207,7 +219,74 @@ ul {
     border-bottom: 6px solid #f2f2f2;
 }
 
+.services__head {
+    margin-top: 60px;
+}
+
 .services .container {
     flex-direction: column;
     align-items: flex-start;
+}
+
+.lead {
+    margin-top: 30px;
+    font-family: 'Lato Light', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.item {
+    width: 300px;
+    margin: 0 10px 30px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.item:first-of-type, .item:nth-last-of-type(3) {
+    margin-left: 0;
+}
+
+.item:last-of-type, .item:nth-of-type(3) {
+    margin-right: 0;
+}
+
+.item__head, .item__lead {
+    padding-left: 80px;
+}
+
+.item__lead {
+    font-size: 12px;
+    line-height: 2;
+    margin-top: 10px;
+}
+
+.item-1 {
+    background-image: url(./assets/img/services/pen.png);
+}
+
+.item-2 {
+    background-image: url(./assets/img/services/bulb.png);
+}
+
+.item-3 {
+    background-image: url(./assets/img/services/heart.png);
+}
+
+.item-4 {
+    background-image: url(./assets/img/services/phone.png);
+}
+
+.item-5 {
+    background-image: url(./assets/img/services/bubble.png);
+}
+
+.item-6 {
+    background-image: url(./assets/img/services/star.png);
 }
