@@ -137,11 +137,12 @@ p {
     content: '';
     position: absolute;
     top: 50%;
+    transform: translate(-50%, 50%);
     left: 0;
-    width: 4px;
-    height: 4px;
+    width: 2px;
+    height: 2px;
     background-color: var(--color-circle);
-    border-radius: 2px;
+    border-radius: 1px;
 }
 
 .nav-list__item:first-child::before {
@@ -154,7 +155,7 @@ p {
     font-family: 'Lato Bold', sans-serif;
     font-size: 12px;
     line-height: 6px;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.4px;
 }
 
 .nav-list__item:last-child a {
@@ -277,10 +278,12 @@ p {
 }
 
 .item__lead {
+    max-height: 66px;
     margin-top: 10px;
     font-size: 12px;
     line-height: 22px;
-    letter-spacing: 0.1px
+    letter-spacing: 0.1px;
+    overflow: hidden;
 }
 
 .item-1 {
