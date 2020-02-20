@@ -185,7 +185,6 @@ p {
     content: '';
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     width: 16px;
     height: 27px;
     background-image: url(./assets/img/slider/icon-chev.png);
@@ -201,11 +200,18 @@ p {
 
 .slide {
     position: relative;
-    padding-left: 60px;
 }
 
 .slide--vertical {
     width: 300px;
+}
+
+.slide__img {
+    margin-top: -20px;
+}
+
+.slide--vertical .slide__img {
+    padding-left: 70px;
 }
 
 .slide--horizontal {
@@ -214,7 +220,8 @@ p {
 
 .slide--horizontal .slide__img {
     position: absolute;
-    top: 80px;
+    top: 90px;
+    right: 0;
 }
 
 /* Стили для секции services */
