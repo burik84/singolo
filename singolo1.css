@@ -57,6 +57,12 @@ ul {
     list-style-type: none;
 }
 
+h1 {
+    font-family: 'Lato Bold', sans-serif;
+    font-size: 25px;
+    letter-spacing: -0.5px;
+}
+
 h2, h3 {
     font-family: "Lato black", sans-serif;
     color: var(--color-heading);
@@ -110,19 +116,18 @@ p {
 .logo span {
     position: absolute;
     top: 0;
-    right: -12px;
+    right: -8px;
     color: var(--color-active);
 }
 
 .nav-list {
+    padding-top: 6px;
     display: flex;
     flex-direction: row;
 }
 
 .nav-list__item {
     position: relative;
-    font-size: 12px;
-    line-height: 15px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -134,7 +139,6 @@ p {
     left: 0;
     width: 4px;
     height: 4px;
-    transform: translateY(-2px);
     background-color: var(--color-circle);
     border-radius: 2px;
 }
@@ -145,11 +149,16 @@ p {
 
 .nav-list__item a {
     margin: 0 8px;
-    padding: 0 8px;
+    padding: 0 7px;
+    font-family: 'Lato Bold', sans-serif;
+    font-size: 12px;
+    line-height: 6px;
+    letter-spacing: -0.2px;
 }
 
 .nav-list__item:last-child a {
     margin-right: 0;
+    padding-right: 0;
 }
 
 .nav-list__item a:hover, .active {
