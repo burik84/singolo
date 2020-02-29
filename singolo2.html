@@ -13,24 +13,36 @@
 <body>
     <section class="portfolio">
         <div class="container">
-            <h2>Portfolio</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            <h2 class="portfolio__head">Portfolio</h2>
+            <p class="lead">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <div class="tags">
-                <span>All</span><span>Web Design</span><span>Graphic Design</span><span>Artwork</span>
+                <span class="tags__item tags__item--active">All</span><span class="tags__item">Web design</span><span class="tags__item">Graphic design</span><span class="tags__item">Artwork</span>
             </div>
-            <div class="images">
-                <img src="./assets/img/portfolio/image-1.jpg" alt="image">
-                <img src="./assets/img/portfolio/image-2.jpg" alt="image">
-                <img src="./assets/img/portfolio/image-3.jpg" alt="image">
-                <img src="./assets/img/portfolio/image-4.jpg" alt="image">
-                <img src="./assets/img/portfolio/image-5.jpg" alt="image">
-                <img src="./assets/img/portfolio/image-6.jpg" alt="image">
-                <img src="./assets/img/portfolio/image-7.jpg" alt="image">
-                <img src="./assets/img/portfolio/image-8.jpg" alt="image">
-                <img src="./assets/img/portfolio/image-9.jpg" alt="image">
-                <img src="./assets/img/portfolio/image-10.jpg" alt="image">
-                <img src="./assets/img/portfolio/image-11.jpg" alt="image">
-                <img src="./assets/img/portfolio/image-12.jpg" alt="image">
+            <div class="gallery">
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/image-1.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/image-2.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/image-3.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/image-4.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/image-5.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/image-6.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/image-7.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/image-8.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/image-9.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/image-10.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/image-11.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/image-12.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
             </div>
             <!-- /.images -->
         </div>
@@ -39,8 +51,9 @@
     </section>
     <section class="about-us">
         <div class="container">
-            <h2>About us</h2>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <h2 class="about-us__head">About us</h2>
+            <p class="lead">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh.</p>
             <div class="cards">
                 <div class="card">
                     <div class="card__img">
@@ -56,12 +69,15 @@
                     </div>
                     <!-- /.card__descr -->
                     <div class="social">
-                        <a href="#" class="social__icon"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a>
-                        <a href="#" class="social__icon"><img src="./assets/img/social/google+.png" alt="logo google+"></a>
-                        <a href="#" class="social__icon"><img src="./assets/img/social/twitter.png" alt="logo twitter"></a>
-                        <a href="#" class="social__icon"><img src="./assets/img/social/linkedin.png" alt="logo linkedin"></a>
+                        <div class="social__icon"><a href="#" class="social__link"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/google+.png" alt="logo google+"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/twitter.png" alt="logo twitter"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/linkedin.png" alt="logo linkedin"></a></div>
                     </div>
-                    <!-- /.card__icons -->
+                    <!-- /.social -->
                 </div>
                 <!-- /.card -->
                 <div class="card">
@@ -77,13 +93,16 @@
                         <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                     </div>
                     <!-- /.card__descr -->
-                    <div class="card__icons">
-                        <a href="#" class="social__icon"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a>
-                        <a href="#" class="social__icon"><img src="./assets/img/social/google+.png" alt="logo google+"></a>
-                        <a href="#" class="social__icon"><img src="./assets/img/social/twitter.png" alt="logo twitter"></a>
-                        <a href="#" class="social__icon"><img src="./assets/img/social/linkedin.png" alt="logo linkedin"></a>
+                    <div class="social">
+                        <div class="social__icon"><a href="#" class="social__link"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/google+.png" alt="logo google+"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/twitter.png" alt="logo twitter"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/linkedin.png" alt="logo linkedin"></a></div>
                     </div>
-                    <!-- /.card__icons -->
+                    <!-- /.social -->
                 </div>
                 <!-- /.card -->
                 <div class="card">
@@ -99,13 +118,16 @@
                         <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                     </div>
                     <!-- /.card__descr -->
-                    <div class="card__icons">
-                        <a href="#" class="social__icon"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a>
-                        <a href="#" class="social__icon"><img src="./assets/img/social/google+.png" alt="logo google+"></a>
-                        <a href="#" class="social__icon"><img src="./assets/img/social/twitter.png" alt="logo twitter"></a>
-                        <a href="#" class="social__icon"><img src="./assets/img/social/linkedin.png" alt="logo linkedin"></a>
+                    <div class="social">
+                        <div class="social__icon"><a href="#" class="social__link"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/google+.png" alt="logo google+"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/twitter.png" alt="logo twitter"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/linkedin.png" alt="logo linkedin"></a></div>
                     </div>
-                    <!-- /.card__icons -->
+                    <!-- /.social -->
                 </div>
                 <!-- /.card -->
             </div>
