@@ -14,7 +14,7 @@
 }
 
 .tags {
-    margin-top: 15px;
+    margin-top: 11px;
     margin-bottom: 20px;
     font-size: 12px;
     line-height: 22px;
@@ -26,10 +26,11 @@
     color: var(--color-text);
     text-transform: capitalize;
     border: 1px solid var(--color-text);
-    border-radius: 3px;
-    padding: 6px;
+    border-radius: 4px;
+    padding: 2px 7px 2px 6px;
     cursor: pointer;
     transition: all 0.5s;
+    letter-spacing: -0.1px;
 }
 
 .tags__item--active, .tags__item:hover {
@@ -40,10 +41,10 @@
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-gap: 19px;
     max-width: 1020px;
     width: 100%;
-    margin: 0 auto;
+    margin: -1px auto 0;
     overflow: hidden;
 }
 
@@ -69,7 +70,7 @@
 }
 
 .about-us__head {
-    margin-top: 65px;
+    margin-top: 60px;
 }
 
 .cards {
@@ -94,16 +95,21 @@
 }
 
 .card__title {
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .card__descr {
-    margin-top: 20px;
+    margin-top: 10px;
+    max-height: 66px;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    overflow: hidden;
 }
 
 .social {
     display: flex;
-    margin-top: 30px;
+    margin-top: 22px;
 }
 
 .social__icon {
