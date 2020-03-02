@@ -22,15 +22,15 @@
 
 .tags__item {
     margin-right: 10px;
+    padding: 2px 7px 2px 6px;
     font-family: 'Lato Regular', sans-serif;
-    color: var(--color-text);
     text-transform: capitalize;
+    letter-spacing: -0.1px;
+    color: var(--color-text);
     border: 1px solid var(--color-text);
     border-radius: 4px;
-    padding: 2px 7px 2px 6px;
     cursor: pointer;
     transition: all 0.5s;
-    letter-spacing: -0.1px;
 }
 
 .tags__item--active, .tags__item:hover {
@@ -77,9 +77,9 @@
 
 .cards {
     display: flex;
+    margin-top: 45px;
     align-items: center;
     justify-content: space-between;
-    margin-top: 45px;
 }
 
 .card {
@@ -103,6 +103,7 @@
 }
 
 .card__descr {
+    max-height: 66px;
     margin-top: 10px;
     max-height: 66px;
     font-size: 12px;
@@ -118,8 +119,8 @@
 
 .social__icon {
     margin-right: 8px;
-    text-align: center;
     line-height: 32px;
+    text-align: center;
 }
 
 .social__link {
