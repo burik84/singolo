@@ -29,6 +29,13 @@ address {
     font-family: "Lato Regular", sans-serif;
 }
 
+input[type="submit"] {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: #f48c8f;
+}
+
 /* Style section get-quote */
 .get-quote .container {
     flex-direction: column;
