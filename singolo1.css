@@ -194,12 +194,16 @@ p {
 .slides::before, .slides::after {
     content: '';
     position: absolute;
-    top: 50%;
+    top: 280px;
     width: 16px;
     height: 27px;
     background-image: url(./assets/img/slider/icon-chev.png);
     cursor: pointer;
     z-index: 1;
+}
+
+.slides::before {
+    left: 2px;
 }
 
 .slides::after {
@@ -221,7 +225,8 @@ p {
 }
 
 .slide--vertical .slide__img {
-    padding-left: 70px;
+    padding-top: 3px;
+    padding-left: 73px;
 }
 
 .slide--horizontal {
@@ -260,7 +265,7 @@ p {
     width: 300px;
     margin: 0 10px 28px;
     background-repeat: no-repeat;
-    background-position: 0 4px;
+    background-position: 0px 5px;
 }
 
 .item:first-of-type, .item:nth-of-type(4n) {
@@ -273,6 +278,7 @@ p {
 
 .item:nth-of-type(n+4) {
     margin-top: 2px;
+    background-position: 1px 1px;
 }
 
 .item__head, .item__lead {
@@ -281,10 +287,10 @@ p {
 
 .item__lead {
     max-height: 66px;
-    margin-top: 10px;
+    margin-top: 11px;
     font-size: 12px;
     line-height: 22px;
-    letter-spacing: 0.1px;
+    text-align: justify;
     overflow: hidden;
 }
 
