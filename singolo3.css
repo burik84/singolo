@@ -5,7 +5,8 @@ input {
     padding-left: 13px;
     margin-top: -1px;
     font-family: "Lato Regular", sans-serif;
-    border: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
     background-color: transparent;
     color: white;
     outline: 0;
@@ -86,6 +87,16 @@ input[type="submit"] {
 .form__input input::placeholder, .form__input textarea::placeholder {
     color: #f48c8f;
     letter-spacing: -0.5px;
+}
+
+.form__input input[name="name"]:invalid:not(:placeholder-shown),
+.form__input input[name="email-address"]:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
+.form__input input[name="name"]:valid:not(:placeholder-shown),
+.form__input input[name="email-address"]:valid:not(:placeholder-shown) {
+    border-color: #67E667;
 }
 
 .contacts {
