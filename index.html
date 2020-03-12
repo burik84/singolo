@@ -27,9 +27,24 @@
     <section class="slider">
         <div class="container">
             <h2 class="hidden">Slider</h2>
-            <div class="slides">
+            <!-- <div class="slides">
+
                 <div class="slide slide--vertical"><img class="slide__img" src="./assets/img/slider/iPhone-Vertical.png" alt="iPhone-Vertical"></div>
                 <div class="slide slide--horizontal"><img class="slide__img" src="./assets/img/slider/iPhone-Horizontal.png" alt="iPhone-Horizontal"></div>
+            </div> -->
+            <!-- /.slides -->
+
+            <div class="slides">
+                <figure class="slide slide--vertical">
+                    <img class="slide__img phone__shadow" src="./assets/img/slider/phone-vertical-shadow.png" alt="iPhone-Vertical">
+                    <img class="slide__img phone__vertical" src="./assets/img/slider/phone-vertical.png" alt="iPhone-Vertical">
+                    <img class="slide__img phone__display" src="./assets/img/slider/phone-vertical-display.png" alt="iPhone-Vertical">
+                </figure>
+                <figure class="slide  slide--horizontal">
+                    <img class="slide__img phone__shadow phone__shadow--horizontal" src="./assets/img/slider/phone-horizontal-shadow.png" alt="iPhone-horizontal">
+                    <img class="slide__img phone__vertical phone__vertical--horizontal" src="./assets/img/slider/phone-horizontal.png" alt="iPhone-horizontal">
+                    <img class="slide__img phone__display phone__display--horizontal" src="./assets/img/slider/phone-horizontal-display.png" alt="iPhone-horizontal">
+                </figure>
             </div>
             <!-- /.slides -->
         </div>
@@ -114,7 +129,8 @@
     <section class="about-us">
         <div class="container">
             <h2 class="about-us__head">About us</h2>
-            <p class="lead">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            <p class="about-us__lead lead">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+                tortor mauris
                 condimentum nibh.</p>
             <div class="cards">
                 <div class="card">
@@ -122,14 +138,8 @@
                         <img src="./assets/img/photo/photo1.jpg" alt="photo">
                     </div>
                     <!-- /.card__img -->
-                    <div class="card__title">
-                        <h3>Adam Jensen</h3>
-                    </div>
-                    <!-- /.card__title -->
-                    <div class="card__descr">
-                        <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-                    </div>
-                    <!-- /.card__descr -->
+                    <h3 class="card__title">Adam Jensen</h3>
+                    <p class="card__descr">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                     <div class="social">
                         <div class="social__icon"><a href="#" class="social__link"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a></div>
                         <div class="social__icon">
@@ -147,13 +157,8 @@
                         <img src="./assets/img/photo/photo2.jpg" alt="photo">
                     </div>
                     <!-- /.card__img -->
-                    <div class="card__title">
-                        <h3>Desmond Miles</h3>
-                    </div>
-                    <!-- /.card__title -->
-                    <div class="card__descr">
-                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                    </div>
+                    <h3 class="card__title">Desmond Miles</h3>
+                    <p class="card__descr">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                     <!-- /.card__descr -->
                     <div class="social">
                         <div class="social__icon"><a href="#" class="social__link"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a></div>
@@ -172,13 +177,8 @@
                         <img src="./assets/img/photo/photo3.jpg" alt="photo">
                     </div>
                     <!-- /.card__img -->
-                    <div class="card__title">
-                        <h3>Scolara Visari</h3>
-                    </div>
-                    <!-- /.card__title -->
-                    <div class="card__descr">
-                        <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-                    </div>
+                    <h3 class="card__title">Scolara Visari</h3>
+                    <p class="card__descr">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                     <!-- /.card__descr -->
                     <div class="social">
                         <div class="social__icon"><a href="#" class="social__link"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a></div>
@@ -200,7 +200,8 @@
     <section class="get-quote">
         <div class="container">
             <h2 class="get-quote__head">Get a Quote</h2>
-            <p class="lead">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            <p class="get-quote__lead lead">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+                tortor mauris
                 condimentum nibh.</p>
             <div class="get-quote__container">
                 <div class="get-quote__form">
@@ -220,11 +221,13 @@
                     <p class="contacts__descr">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
                         consequat
                         felis. </p>
-                    <address class="contacts__adress">
-                        <p class="contact__adress adress">Elm St. 14/05 Lost City </p>
-                        <p class="contact__adress phone">03528 331 86 35</p>
-                        <p class="contact__adress mail">info@singolo.com</p>
-                    </address>
+                    <ul class="contacts__adress">
+                        <li class="contact__adress adress">Elm St. 14/05 Lost City </li>
+                        <li class="contact__adress phone"><a class="contact__link" href="tel:03528 331 86 35">03528 331 86 35</a></li>
+                        <!-- /.contact__adress phone -->
+                        <li class="contact__adress mail"><a class="contact__link" href="mailto:info@singolo.com">info@singolo.com</a></li>
+
+                    </ul>
                 </div>
                 <!-- /.get-quote__forms -->
             </div>
@@ -234,7 +237,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__copy">
-                <p> &copy; Copyright 2013 by PSDchat.com</p>
+                <p> &copy; Copyright 2013 <span class="footer__copy--item">by PSDchat.com</span></p>
             </div>
             <div class="footer__social social">
                 <div class="social__icon social__icon--footer"><a href="#" class="social__link social__link--footer"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a></div>
