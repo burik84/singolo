@@ -1,28 +1,40 @@
 /* Подключение шрифтов */
 @font-face {
     font-family: 'Lato Light';
-    src: url("./assets/fonts/Lato-Light.ttf") format('truetype');
+    src: url('./assets/fonts/Lato-Light.eot');
+    src: url('./assets/fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Lato-Light.woff') format('woff'),
+        url('./assets/fonts/Lato-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato Regular';
-    src: url("./assets/fonts/Lato-Regular.ttf") format('truetype');
+    src: url('./assets/fonts/Lato-Regular.eot');
+    src: url('./assets/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Lato-Regular.woff') format('woff'),
+        url('./assets/fonts/Lato-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato Bold';
-    src: url("./assets/fonts/Lato-Bold.ttf") format('truetype');
-    font-weight: normal;
+    src: url('./assets/fonts/Lato-Bold.eot');
+    src: url('./assets/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Lato-Bold.woff') format('woff'),
+        url('./assets/fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato Black';
-    src: url("./assets/fonts/Lato-Black.ttf") format('truetype');
+    src: url('./assets/fonts/Lato-Black.eot');
+    src: url('./assets/fonts/Lato-Black.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Lato-Black.woff') format('woff'),
+        url('./assets/fonts/Lato-Black.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -404,25 +416,23 @@ input[type="submit"] {
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 19px;
+    grid-gap: 20px;
     max-width: 1020px;
-    width: 100%;
-    height: 604px;
-    margin: -1px auto 0;
+    height: 600px;
+    margin-top: -1px;
     overflow: hidden;
 }
 
 .gallery__item {
-    width: 220px;
-    height: 187px;
+    /* width: 220px;
+    height: 187px; */
     overflow: hidden;
 }
 
-.gallery__img {
+/* .gallery__img {
     width: 100%;
     height: 100%;
-}
-
+} */
 /* styles about us */
 .about-us {
     height: 734px;
