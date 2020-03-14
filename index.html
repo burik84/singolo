@@ -10,16 +10,16 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <div class="container">
             <h1 class="logo"><a href="#">Singolo <span>*</span></a></h1>
             <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-list__item active"><a href="#">Home</a></li>
-                    <li class="nav-list__item"><a href="#">Services</a></li>
-                    <li class="nav-list__item"><a href="#">Portfolio</a></li>
-                    <li class="nav-list__item"><a href="#">About</a></li>
-                    <li class="nav-list__item"><a href="#">Contact</a></li>
+                <ul class="nav-list" id="menu">
+                    <li class="nav-list__item"><a href="#home" class="active">Home</a></li>
+                    <li class="nav-list__item"><a href="#services">Services</a></li>
+                    <li class="nav-list__item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-list__item"><a href="#about">About</a></li>
+                    <li class="nav-list__item"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,13 +27,6 @@
     <section class="slider">
         <div class="container">
             <h2 class="hidden">Slider</h2>
-            <!-- <div class="slides">
-
-                <div class="slide slide--vertical"><img class="slide__img" src="./assets/img/slider/iPhone-Vertical.png" alt="iPhone-Vertical"></div>
-                <div class="slide slide--horizontal"><img class="slide__img" src="./assets/img/slider/iPhone-Horizontal.png" alt="iPhone-Horizontal"></div>
-            </div> -->
-            <!-- /.slides -->
-
             <div class="slides">
                 <figure class="slide slide--vertical">
                     <img class="slide__img phone__shadow" src="./assets/img/slider/phone-vertical-shadow.png" alt="iPhone-Vertical">
@@ -50,7 +43,7 @@
         </div>
         <!-- /.container -->
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <h2 class="services__head">Our services</h2>
             <p class="lead">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
@@ -88,14 +81,14 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="portfolio__head">Portfolio</h2>
             <p class="lead">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-            <div class="tags">
-                <span class="tags__item tags__item--active">All</span><span class="tags__item">Web design</span><span class="tags__item">Graphic design</span><span class="tags__item">Artwork</span>
+            <div class="tags" id="tag">
+                <span class="tags__item active">All</span><span class="tags__item">Web design</span><span class="tags__item">Graphic design</span><span class="tags__item">Artwork</span>
             </div>
-            <div class="gallery">
+            <div class="gallery" id="gallery">
                 <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-1.jpg" alt="image"></div>
                 <!-- /.gallery__item -->
                 <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-2.jpg" alt="image"></div>
@@ -126,7 +119,7 @@
         <!-- /.container -->
 
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about">
         <div class="container">
             <h2 class="about-us__head">About us</h2>
             <p class="about-us__lead lead">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
@@ -197,7 +190,7 @@
         </div>
         <!-- /.container -->
     </section>
-    <section class="get-quote">
+    <section class="get-quote" id="contact">
         <div class="container">
             <h2 class="get-quote__head">Get a Quote</h2>
             <p class="get-quote__lead lead">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
@@ -205,13 +198,21 @@
                 condimentum nibh.</p>
             <div class="get-quote__container">
                 <div class="get-quote__form">
-                    <form class="form" action="https://www.w3schools.com/action_page.php" method="post">
-                        <div class="form__input"><input type="text" name="name" value="" placeholder="Name (Required)" required></div>
-                        <div class="form__input"><input type="email" name="email-address" value="" placeholder="Email (Required)" required></div>
-                        <div class="form__input"><input type="text" name="subject" value="" placeholder="Subject"></div>
-                        <div class="form__input  form__input--descr"><textarea name="name" rows="8" cols="80" placeholder="Describe your project in detail..."></textarea></div>
+                    <form class="form" id="form" action method="post">
+                        <div class="form__input">
+                            <input type="text" name="name" value="" placeholder="Name (Required)" required>
+                        </div>
+                        <div class="form__input">
+                            <input type="email" name="email-address" value="" placeholder="Email (Required)" required>
+                        </div>
+                        <div class="form__input">
+                            <input type="text" name="subject" id="form-subject" value="" placeholder="Subject">
+                        </div>
+                        <div class="form__input  form__input--descr">
+                            <textarea name="name" id="form-descr" rows="8" cols="80" placeholder="Describe your project in detail..."></textarea>
+                        </div>
                         <div class="form__input  form__input--button">
-                            <input type="submit" value="отправить">
+                            <input type="submit" value="отправить" id="btn">
                         </div>
                     </form>
                 </div>
@@ -226,13 +227,24 @@
                         <li class="contact__adress phone"><a class="contact__link" href="tel:03528 331 86 35">03528 331 86 35</a></li>
                         <!-- /.contact__adress phone -->
                         <li class="contact__adress mail"><a class="contact__link" href="mailto:info@singolo.com">info@singolo.com</a></li>
-
                     </ul>
                 </div>
                 <!-- /.get-quote__forms -->
             </div>
         </div>
         <!-- /.container -->
+        <div id="modal" class="hidden">
+            <div id="modal-content">
+                <div class="modal__close">
+                    <span class="close">&times;</span>
+                </div>
+                <!-- /.modal__block -->
+                <h3 class="modal__descr">Письмо отправлено</h3>
+                <p class="modal__descr"><span id="modal-subject"></span></p>
+                <p class="modal__descr"><span id="modal-describe"></span></p>
+                <button class="modal__button" type="button" name="button" id="close-btn">ОК</button>
+            </div>
+        </div>
     </section>
     <footer class="footer">
         <div class="container">
@@ -252,6 +264,8 @@
         </div>
         <!-- /.container -->
     </footer>
+
+    <script src="./script.js" charset="utf-8"></script>
 </body>
 
 </html>
