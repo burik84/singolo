@@ -752,6 +752,7 @@ textarea {
 
 .modal__descr {
     margin: 20px 0;
+    text-transform: none;
 }
 
 .modal__button {
