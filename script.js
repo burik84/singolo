@@ -4,6 +4,10 @@ const GALLERY = document.getElementById('gallery');
 const phone1 = document.getElementsByClassName("phone__vertical")[0];
 const phone2 = document.getElementsByClassName("phone__vertical")[1];
 
+// элементы для карусели
+const PREV = document.getElementsByClassName("prev")[0];
+const NEXT = document.getElementsByClassName("next")[0];
+
 // Элементы для модального окна
 const BUTTON = document.getElementById('btn');
 const CLOSE_BUTTON = document.getElementById('close-btn');
@@ -25,7 +29,7 @@ TAG.addEventListener('click', (event) => {
     TAG.querySelectorAll('span').forEach(elem => elem.classList.remove('active'));
     event.target.classList.add('active');
     // console.log(galleryItem.length);
-    array = galleryItem;
+    // Меняем порядок для картинок
     for (var i = 0; i < galleryItem.length; i++) {
         // console.log(Math.round(Math.random() * 50));
         galleryItem[i].style.order = Math.round(Math.random() * 50);
@@ -40,7 +44,33 @@ phone2.addEventListener('click', (event) => {
     document.getElementsByClassName("phone__display")[1].classList.toggle('hidden');
 });
 
-
+// Переключатель для активного слайда - основная страница
+let sliderActive = true;
+PREV.addEventListener('click', (event) => {
+    sliderActive = !sliderActive;
+    document.getElementsByClassName("slider")[0].classList.toggle('js-show');
+    if (!sliderActive) {
+        document.getElementsByClassName("slider-2")[0].classList.remove('js-hidden');
+        document.getElementsByClassName("slider-1")[0].classList.add('js-hidden');
+    } else {
+        document.getElementsByClassName("slider-1")[0].classList.remove('js-hidden');
+        document.getElementsByClassName("slider-2")[0].classList.add('js-hidden');
+    }
+    transformLeft();
+    // console.log(sliderActive);
+});
+NEXT.addEventListener('click', (event) => {
+    sliderActive = !sliderActive;
+    document.getElementsByClassName("slider")[0].classList.toggle('js-show');
+    if (!sliderActive) {
+        document.getElementsByClassName("slider-2")[0].classList.remove('js-hidden');
+        document.getElementsByClassName("slider-1")[0].classList.add('js-hidden');
+    } else {
+        document.getElementsByClassName("slider-1")[0].classList.remove('js-hidden');
+        document.getElementsByClassName("slider-2")[0].classList.add('js-hidden');
+    }
+    // console.log(sliderActive);
+});
 // Рамка для портфолио
 GALLERY.addEventListener('click', (event) => {
     GALLERY.querySelectorAll('img').forEach(elem => elem.classList.remove('js-frame'));
@@ -57,6 +87,7 @@ BUTTON.addEventListener('click', (e) => {
     // console.log(name, mail);
     let subject = document.getElementById('form-subject').value.toString();
     let description = document.getElementById('form-descr').value.toString();
+    // Проверяем на заполнение обязательных полей
     if (!name || !mail) {
         alert("Заполните поле name или mail");
         return;
