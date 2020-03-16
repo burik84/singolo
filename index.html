@@ -27,19 +27,34 @@
     <section class="slider">
         <div class="container">
             <h2 class="hidden">Slider</h2>
-            <div class="slides">
-                <figure class="slide slide--vertical">
-                    <img class="slide__img phone__shadow" src="./assets/img/slider/phone-vertical-shadow.png" alt="iPhone-Vertical">
-                    <img class="slide__img phone__vertical" src="./assets/img/slider/phone-vertical.png" alt="iPhone-Vertical">
-                    <img class="slide__img phone__display" src="./assets/img/slider/phone-vertical-display.png" alt="iPhone-Vertical">
-                </figure>
-                <figure class="slide  slide--horizontal">
-                    <img class="slide__img phone__shadow phone__shadow--horizontal" src="./assets/img/slider/phone-horizontal-shadow.png" alt="iPhone-horizontal">
-                    <img class="slide__img phone__vertical phone__vertical--horizontal" src="./assets/img/slider/phone-horizontal.png" alt="iPhone-horizontal">
-                    <img class="slide__img phone__display phone__display--horizontal" src="./assets/img/slider/phone-horizontal-display.png" alt="iPhone-horizontal">
-                </figure>
+            <div class="slider__button prev" id="left">
+                <img src="./assets/img/slider/icon-chev.png" alt="">
+            </div>
+            <div class="slides ">
+                <div class="slider-1">
+                    <figure class="slide slide--vertical">
+                        <img class="slide__img phone__shadow" src="./assets/img/slider/phone-vertical-shadow.png" alt="iPhone-Vertical">
+                        <img class="slide__img phone__vertical" src="./assets/img/slider/phone-vertical.png" alt="iPhone-Vertical">
+                        <img class="slide__img phone__display" src="./assets/img/slider/phone-vertical-display.png" alt="iPhone-Vertical">
+                    </figure>
+                    <figure class="slide  slide--horizontal">
+                        <img class="slide__img phone__shadow phone__shadow--horizontal" src="./assets/img/slider/phone-horizontal-shadow.png" alt="iPhone-horizontal">
+                        <img class="slide__img phone__vertical phone__vertical--horizontal" src="./assets/img/slider/phone-horizontal.png" alt="iPhone-horizontal">
+                        <img class="slide__img phone__display phone__display--horizontal" src="./assets/img/slider/phone-horizontal-display.png" alt="iPhone-horizontal">
+                    </figure>
+                </div>
+                <div class="slider-2  js-hidden">
+                    <figure class="slide">
+                        <img class="slide__img" src="./assets/img/slider/phone2.png" alt="iPhone-Vertical">
+                    </figure>
+                </div>
+                <!-- /.slider-2 -->
             </div>
             <!-- /.slides -->
+
+            <div class="slider__button next" id="left">
+                <img src="./assets/img/slider/icon-chev.png" alt="">
+            </div>
         </div>
         <!-- /.container -->
     </section>
@@ -200,10 +215,10 @@
                 <div class="get-quote__form">
                     <form class="form" id="form" action method="post">
                         <div class="form__input">
-                            <input type="text" name="name" value="" placeholder="Name (Required)" required>
+                            <input type="text" name="name" value="" id="form-name" placeholder="Name (Required)" required>
                         </div>
                         <div class="form__input">
-                            <input type="email" name="email-address" value="" placeholder="Email (Required)" required>
+                            <input type="email" name="email-address" id="form-mail" value="" placeholder="Email (Required)" required>
                         </div>
                         <div class="form__input">
                             <input type="text" name="subject" id="form-subject" value="" placeholder="Subject">
