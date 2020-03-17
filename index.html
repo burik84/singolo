@@ -24,27 +24,24 @@
             </nav>
         </div>
     </header>
-    <section class="slider">
+    <section class="slider" id="slider">
         <div class="container">
             <h2 class="hidden">Slider</h2>
-            <div class="slider__button prev" id="left">
-                <img src="./assets/img/slider/icon-chev.png" alt="">
-            </div>
-            <div class="slides ">
-                <div class="slider-1">
+            <div class="slider-container ">
+                <div class="slider__item active">
                     <figure class="slide slide--vertical">
                         <img class="slide__img phone__shadow" src="./assets/img/slider/phone-vertical-shadow.png" alt="iPhone-Vertical">
                         <img class="slide__img phone__vertical" src="./assets/img/slider/phone-vertical.png" alt="iPhone-Vertical">
                         <img class="slide__img phone__display" src="./assets/img/slider/phone-vertical-display.png" alt="iPhone-Vertical">
                     </figure>
-                    <figure class="slide  slide--horizontal">
+                    <figure class="slide slide--horizontal">
                         <img class="slide__img phone__shadow phone__shadow--horizontal" src="./assets/img/slider/phone-horizontal-shadow.png" alt="iPhone-horizontal">
                         <img class="slide__img phone__vertical phone__vertical--horizontal" src="./assets/img/slider/phone-horizontal.png" alt="iPhone-horizontal">
                         <img class="slide__img phone__display phone__display--horizontal" src="./assets/img/slider/phone-horizontal-display.png" alt="iPhone-horizontal">
                     </figure>
                 </div>
-                <div class="slider-2  js-hidden">
-                    <figure class="slide">
+                <div class="slider__item">
+                    <figure class="slide slide--one">
                         <img class="slide__img" src="./assets/img/slider/phone2.png" alt="iPhone-Vertical">
                     </figure>
                 </div>
@@ -52,8 +49,17 @@
             </div>
             <!-- /.slides -->
 
-            <div class="slider__button next" id="left">
-                <img src="./assets/img/slider/icon-chev.png" alt="">
+            <div class="slider-control prev">
+                <div class="arrow left">
+                    <img src="./assets/img/slider/icon-chev.png" alt="">
+                </div>
+                <!-- /.arrow left -->
+            </div>
+            <div class="slider-control next">
+                <div class="arrow right">
+                    <img src="./assets/img/slider/icon-chev.png" alt="">
+                </div>
+                <!-- /.arrow right -->
             </div>
         </div>
         <!-- /.container -->
