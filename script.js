@@ -5,8 +5,9 @@ const phone1 = document.getElementsByClassName("phone__vertical")[0];
 const phone2 = document.getElementsByClassName("phone__vertical")[1];
 
 // элементы для карусели
-const PREV = document.getElementsByClassName("prev")[0];
-const NEXT = document.getElementsByClassName("next")[0];
+let items = document.querySelectorAll('.slider__item');
+let currentItem = 0;
+let isEnabled = true;
 
 // Элементы для модального окна
 const BUTTON = document.getElementById('btn');
@@ -44,33 +45,60 @@ phone2.addEventListener('click', (event) => {
     document.getElementsByClassName("phone__display")[1].classList.toggle('hidden');
 });
 
-// Переключатель для активного слайда - основная страница
-let sliderActive = true;
-PREV.addEventListener('click', (event) => {
-    sliderActive = !sliderActive;
-    document.getElementsByClassName("slider")[0].classList.toggle('js-show');
-    if (!sliderActive) {
-        document.getElementsByClassName("slider-2")[0].classList.remove('js-hidden');
-        document.getElementsByClassName("slider-1")[0].classList.add('js-hidden');
-    } else {
-        document.getElementsByClassName("slider-1")[0].classList.remove('js-hidden');
-        document.getElementsByClassName("slider-2")[0].classList.add('js-hidden');
+// Слайдер
+// Номер текущего слайда
+function changeCurrentItem(n) {
+    currentItem = (n + items.length) % items.length;
+    console.log(currentItem);
+    document.getElementsByClassName("slider")[0].classList.toggle('active');
+}
+
+// скрытие/показ слайдов - работа анимации
+function hideItem(direction) {
+    isEnabled = false;
+    items[currentItem].classList.add(direction);
+    items[currentItem].addEventListener('animationend', function() {
+        this.classList.remove('active', direction);
+    });
+}
+
+function showItem(direction) {
+    items[currentItem].classList.add('next', direction);
+    items[currentItem].addEventListener('animationend', function() {
+        this.classList.remove('next', direction);
+        this.classList.add('active');
+        isEnabled = true;
+    })
+}
+
+// добавляем/удаляем индекс слайда
+function previousItem(n) {
+    hideItem('to-right');
+    changeCurrentItem(n - 1);
+    showItem('from-left');
+}
+
+function nextItem(n) {
+    hideItem('to-left');
+    changeCurrentItem(n + 1);
+    showItem('from-right');
+}
+
+// Клик по нашим стрелкам и вызов функций для переключения
+document.querySelector('.slider-control.prev').addEventListener('click', function() {
+    // changeCurrentItem(currentItem-1);
+    if (isEnabled) {
+        previousItem(currentItem);
     }
-    transformLeft();
-    // console.log(sliderActive);
 });
-NEXT.addEventListener('click', (event) => {
-    sliderActive = !sliderActive;
-    document.getElementsByClassName("slider")[0].classList.toggle('js-show');
-    if (!sliderActive) {
-        document.getElementsByClassName("slider-2")[0].classList.remove('js-hidden');
-        document.getElementsByClassName("slider-1")[0].classList.add('js-hidden');
-    } else {
-        document.getElementsByClassName("slider-1")[0].classList.remove('js-hidden');
-        document.getElementsByClassName("slider-2")[0].classList.add('js-hidden');
+
+document.querySelector('.slider-control.next').addEventListener('click', function() {
+    // changeCurrentItem(currentItem-1);
+    if (isEnabled) {
+        nextItem(currentItem);
     }
-    // console.log(sliderActive);
 });
+
 // Рамка для портфолио
 GALLERY.addEventListener('click', (event) => {
     GALLERY.querySelectorAll('img').forEach(elem => elem.classList.remove('js-frame'));
