@@ -1,6 +1,12 @@
+// элементы для навигационного меню
 const MENU = document.getElementById('menu');
+
+// элементы для портфолио
 const TAG = document.getElementById('tag');
 const GALLERY = document.getElementById('gallery');
+const galleryItem = document.getElementsByClassName("gallery__item");
+
+// элементы для phone
 const phone1 = document.getElementsByClassName("phone__vertical")[0];
 const phone2 = document.getElementsByClassName("phone__vertical")[1];
 
@@ -12,7 +18,6 @@ let isEnabled = true;
 // Элементы для модального окна
 const BUTTON = document.getElementById('btn');
 const CLOSE_BUTTON = document.getElementById('close-btn');
-const galleryItem = document.getElementsByClassName("gallery__item");
 const modal = document.getElementById('modal');
 const span = document.getElementsByClassName("close")[0];
 
@@ -22,6 +27,30 @@ MENU.addEventListener('click', (event) => {
     // console.log(event.target);
     event.target.classList.add('active');
 });
+// добавляем класс к навигации при скролле
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event) {
+    // console.log(event);
+    const currentPosition = window.scrollY;
+    // console.log(currentPosition);
+    const sections = document.querySelectorAll('section');
+    const links = document.querySelectorAll('#menu a');
+
+    sections.forEach((el) => {
+        // console.log(el.getAttribute('id'));
+        if ((el.offsetTop - 100) <= currentPosition && (el.offsetTop + el.offsetHeight - 100) > currentPosition) {
+            links.forEach((a) => {
+                a.classList.remove('active');
+                if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+                    a.classList.add('active');
+                }
+            })
+        }
+        console.log(currentPosition, el.offsetTop, el.offsetTop <= currentPosition, el.offsetTop + el.offsetHeight, (el.offsetTop + el.offsetHeight) > currentPosition);
+    });
+}
+
 
 // добавляем класс к tag при нажатии
 // И перемешиваем картинки
@@ -49,7 +78,7 @@ phone2.addEventListener('click', (event) => {
 // Номер текущего слайда
 function changeCurrentItem(n) {
     currentItem = (n + items.length) % items.length;
-    console.log(currentItem);
+    // console.log(currentItem);
     document.getElementsByClassName("slider")[0].classList.toggle('active');
 }
 
