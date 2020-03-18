@@ -151,7 +151,11 @@ textarea {
     padding-left: 40px;
 }
 
-#services, #portfolio, #about, #contact {
+#home,
+#services,
+#portfolio,
+#about,
+#contact {
     scroll-margin-top: 95px;
 }
 
@@ -538,6 +542,11 @@ textarea {
 
 .gallery__item {
     overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery__item .gallery__img.js-frame {
+    cursor: default;
 }
 
 .gallery__img {
