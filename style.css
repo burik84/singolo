@@ -40,7 +40,6 @@
   --color-slider-back2: #648bf0;
 }
 /* Общие стили */
-
 *,
 *::after,
 *::before {
@@ -152,7 +151,6 @@ textarea {
   scroll-margin-top: 95px;
 }
 /* Стили для header */
-
 .header {
   position: sticky;
   top: 0;
@@ -231,7 +229,6 @@ textarea {
   color: var(--color-active);
 }
 /* Стили для секции слайдер */
-
 .slider {
   position: relative;
   height: 600px;
@@ -300,7 +297,6 @@ textarea {
   left: -24px;
 }
 /* Новые стили для слайдера */
-
 .slider__item {
   display: none;
   position: relative;
@@ -360,12 +356,12 @@ textarea {
 
 .arrow.left {
   margin-top: -2px;
-  left: 132px;
+  left: 44px;
 }
 
 .arrow.right {
   margin-top: -16px;
-  right: 130px;
+  right: 44px;
   transform-origin: center;
   transform: rotate(180deg);
 }
@@ -406,7 +402,6 @@ textarea {
   }
 }
 /* Стили для секции services */
-
 .services {
   height: 500px;
   background-color: #f2f2f2;
@@ -488,7 +483,6 @@ textarea {
   background-image: url("./assets/img/services/star.png");
 }
 /* styles portfolio */
-
 .portfolio {
   height: 869px;
   background-color: var(--color-background);
@@ -555,7 +549,6 @@ textarea {
   border: 5px solid #f06c64;
 }
 /* styles about us */
-
 .about-us {
   height: 734px;
   background-color: #f2f2f2;
@@ -582,12 +575,8 @@ textarea {
 }
 
 .card {
-  width: 300px;
-}
-
-.card__img {
-  width: 300px;
-  height: 300px;
+  max-width: 300px;
+  width: 100%;
 }
 
 .card__img img {
@@ -630,7 +619,6 @@ textarea {
   border: 1px solid var(--color-text);
 }
 /* Style section get-quote */
-
 .get-quote .container {
   flex-direction: column;
 }
@@ -665,7 +653,9 @@ textarea {
 }
 
 .form {
-  width: 620px;
+  max-width: 620px;
+  min-width: 442px;
+  width: 100%;
 }
 
 .form__input {
@@ -712,6 +702,7 @@ textarea {
 }
 
 .contacts {
+  max-width: 300px;
   width: 100%;
   margin-left: 20px;
 }
@@ -763,7 +754,6 @@ textarea {
   top: 7px;
 }
 /* style Footer */
-
 .footer {
   height: 76px;
   background-color: var(--color-background);
@@ -806,7 +796,6 @@ textarea {
   border: 1px solid rgb(102, 109, 137);
 }
 /* Стили модального окна */
-
 #modal {
   position: absolute;
   width: 100vw;
@@ -863,4 +852,38 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 4px;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .card {
+    margin-right: 10px;
+  }
+
+  .get-quote__container {
+    margin-top: 20px;
+  }
+
+  .form__input {
+    margin-bottom: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    max-width: 219px;
+  }
+
+  .get-quote__container {
+    margin-top: 20px;
+  }
+
+  .form {
+    max-width: 442px;
+  }
+
+  .form__input {
+    margin-bottom: 12px;
+  }
+
+  .contacts {
+    max-width: 221px;
+  }
 }
