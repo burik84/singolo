@@ -40,6 +40,7 @@
   --color-slider-back2: #648bf0;
 }
 /* Общие стили */
+
 *,
 *::after,
 *::before {
@@ -151,6 +152,7 @@ textarea {
   scroll-margin-top: 95px;
 }
 /* Стили для header */
+
 .header {
   position: sticky;
   top: 0;
@@ -229,6 +231,7 @@ textarea {
   color: var(--color-active);
 }
 /* Стили для секции слайдер */
+
 .slider {
   position: relative;
   height: 600px;
@@ -253,7 +256,9 @@ textarea {
 
 .slide {
   position: relative;
-  width: 483px;
+  max-width: 483px;
+  width: 100%;
+  height: 100%;
 }
 
 .slide__img {
@@ -297,6 +302,7 @@ textarea {
   left: -24px;
 }
 /* Новые стили для слайдера */
+
 .slider__item {
   display: none;
   position: relative;
@@ -315,6 +321,7 @@ textarea {
 .slider__item.next {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .slider__item.next {
@@ -356,12 +363,12 @@ textarea {
 
 .arrow.left {
   margin-top: -2px;
-  left: 44px;
+  left: 2px;
 }
 
 .arrow.right {
   margin-top: -16px;
-  right: 44px;
+  right: 0;
   transform-origin: center;
   transform: rotate(180deg);
 }
@@ -402,6 +409,7 @@ textarea {
   }
 }
 /* Стили для секции services */
+
 .services {
   height: 500px;
   background-color: #f2f2f2;
@@ -483,6 +491,7 @@ textarea {
   background-image: url("./assets/img/services/star.png");
 }
 /* styles portfolio */
+
 .portfolio {
   height: 869px;
   background-color: var(--color-background);
@@ -527,7 +536,7 @@ textarea {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   max-width: 1020px;
-  height: 600px;
+  /* height: 600px; */
   overflow: hidden;
 }
 
@@ -541,6 +550,7 @@ textarea {
 }
 
 .gallery__img {
+  max-width: 220px;
   width: 100%;
   height: 100%;
 }
@@ -549,6 +559,7 @@ textarea {
   border: 5px solid #f06c64;
 }
 /* styles about us */
+
 .about-us {
   height: 734px;
   background-color: #f2f2f2;
@@ -619,6 +630,7 @@ textarea {
   border: 1px solid var(--color-text);
 }
 /* Style section get-quote */
+
 .get-quote .container {
   flex-direction: column;
 }
@@ -754,6 +766,7 @@ textarea {
   top: 7px;
 }
 /* style Footer */
+
 .footer {
   height: 76px;
   background-color: var(--color-background);
@@ -796,6 +809,7 @@ textarea {
   border: 1px solid rgb(102, 109, 137);
 }
 /* Стили модального окна */
+
 #modal {
   position: absolute;
   width: 100vw;
@@ -853,9 +867,95 @@ textarea {
   letter-spacing: 4px;
   cursor: pointer;
 }
-@media screen and (min-width: 768px) and (max-width: 1020px) {
+@media screen and (max-width: 1020px) {
+  .slider {
+    height: 452px;
+  }
+
+  .slide--vertical .phone__shadow {
+    max-width: 180px;
+  }
+
+  .slide--vertical .phone__vertical {
+    max-width: 160px;
+  }
+
+  .slide--vertical .phone__display {
+    max-width: 140px;
+  }
+
+  .slide--horizontal .phone__shadow {
+    max-width: 360px;
+  }
+
+  .slide--horizontal .phone__vertical {
+    max-width: 340px;
+  }
+
+  .slide--horizontal .phone__display {
+    max-width: 250px;
+  }
+
+  .slide--one .slide__img {
+    max-width: 390px;
+  }
+
+  .phone__display {
+    top: 102px;
+    left: 82px;
+  }
+
+  .phone__shadow--horizontal {
+    top: 136px;
+    left: -50px;
+  }
+
+  .phone__vertical--horizontal {
+    top: 136px;
+    left: -50px;
+  }
+
+  .phone__display--horizontal {
+    top: 146px;
+    left: -7px;
+  }
+
+  .services {
+    height: 674px;
+  }
+
+  .item,
+  .item:first-of-type,
+  .item:nth-of-type(3n),
+  .item:nth-of-type(4n),
+  .item:nth-of-type(n+4) {
+    margin: 0 52px 39px 0;
+  }
+
+  .item:nth-of-type(2n) {
+    margin-right: 0;
+  }
+
   .card {
     margin-right: 10px;
+  }
+
+  .portfolio {
+    height: 1102px;
+  }
+
+  .tags {
+    margin-bottom: 28px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    height: 794px;
+  }
+
+  .gallery__img {
+    max-width: 216px;
+    height: 100%;
   }
 
   .get-quote__container {
