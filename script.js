@@ -47,7 +47,7 @@ function onScroll(event) {
                 }
             })
         }
-        console.log(currentPosition, el.offsetTop, el.offsetTop <= currentPosition, el.offsetTop + el.offsetHeight, (el.offsetTop + el.offsetHeight) > currentPosition);
+        // console.log(currentPosition, el.offsetTop, el.offsetTop <= currentPosition, el.offsetTop + el.offsetHeight, (el.offsetTop + el.offsetHeight) > currentPosition);
     });
 }
 
@@ -55,7 +55,7 @@ function onScroll(event) {
 // добавляем класс к tag при нажатии
 // И перемешиваем картинки
 TAG.addEventListener('click', (event) => {
-    console.log(event.target);
+    // console.log(event.target);
     TAG.querySelectorAll('span').forEach(elem => elem.classList.remove('active'));
     event.target.classList.add('active');
     // console.log(galleryItem.length);
