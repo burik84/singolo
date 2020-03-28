@@ -10,8 +10,10 @@
 </head>
 
 <body>
+    <div class="overlay hidden"></div>
     <header class="header" id="home">
         <div class="container">
+            <div class="burger-menu" id="burger-menu"><span></span></div>
             <h1 class="logo"><a href="#">Singolo <span>*</span></a></h1>
             <nav class="nav">
                 <ul class="nav-list" id="menu">
@@ -20,6 +22,15 @@
                     <li class="nav-list__item"><a href="#portfolio">Portfolio</a></li>
                     <li class="nav-list__item"><a href="#about">About</a></li>
                     <li class="nav-list__item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="burger-menu__nav">
+                <ul class="burger-menu__list" id="burger-list">
+                    <li class="burger-menu__item"><a href="#slider" class="active">Home</a></li>
+                    <li class="burger-menu__item"><a href="#services">Services</a></li>
+                    <li class="burger-menu__item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="burger-menu__item"><a href="#about">About</a></li>
+                    <li class="burger-menu__item"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,21 +57,22 @@
                     </figure>
                 </div>
                 <!-- /.slider-2 -->
+                <div class="slider-control prev">
+                    <div class="arrow left">
+                        <!-- <img src="./assets/img/slider/icon-chev.png" alt=""> -->
+                        <img src="./assets/img/slider/arrow.svg" alt="arrow-left">
+                    </div>
+                    <!-- /.arrow left -->
+                </div>
+                <div class="slider-control next">
+                    <div class="arrow right">
+                        <!-- <img src="./assets/img/slider/icon-chev.png" alt=""> -->
+                        <img src="./assets/img/slider/arrow.svg" alt="arrow-right">
+                    </div>
+                    <!-- /.arrow right -->
+                </div>
             </div>
             <!-- /.slides -->
-
-            <div class="slider-control prev">
-                <div class="arrow left">
-                    <img src="./assets/img/slider/icon-chev.png" alt="">
-                </div>
-                <!-- /.arrow left -->
-            </div>
-            <div class="slider-control next">
-                <div class="arrow right">
-                    <img src="./assets/img/slider/icon-chev.png" alt="">
-                </div>
-                <!-- /.arrow right -->
-            </div>
         </div>
         <!-- /.container -->
     </section>

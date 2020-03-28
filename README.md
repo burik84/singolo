@@ -1,3 +1,5 @@
 # singolo
 
-[RS school](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-2/singolo/part-1/singolo-1-ru.md)
+[RS school](https://github.com/rolling-scopes-school/tasks/tree/master/tasks/markups/level-2/singolo)
+
+[gh-page](https://burik84.github.io/singolo/)
