@@ -61,6 +61,7 @@ html {
 body {
     font-family: 'Lato Regular', sans-serif;
     background-color: #fff;
+    position: relative;
 }
 
 a,
@@ -139,6 +140,7 @@ textarea {
 }
 
 .container {
+    position: relative;
     display: flex;
     max-width: 1020px;
     width: 100%;
@@ -154,6 +156,20 @@ textarea {
 #portfolio,
 #services {
     scroll-margin-top: 95px;
+}
+
+.overlay {
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    background: #2D303A;
+    opacity: 0.6;
+    z-index: 10;
 }
 
 /* Стили для header */
@@ -173,6 +189,88 @@ textarea {
 .header .container {
     align-items: center;
     justify-content: space-between;
+}
+
+.burger-menu {
+    display: none;
+    /* display: block; */
+    position: absolute;
+    left: 20px;
+    width: 25px;
+    height: 20px;
+    /* background: red; */
+    cursor: pointer;
+}
+
+.burger-menu span, .burger-menu span::before, .burger-menu span::after {
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    height: 2.5px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.burger-menu span::before, .burger-menu span::after {
+    content: '';
+    display: block;
+}
+
+.burger-menu span::before {
+    transform: translateY(-11px);
+}
+
+.burger-menu span::after {
+    transform: translateY(9px);
+}
+
+.burger-menu--active span {
+    transform: rotate(90deg);
+    transform-origin: top;
+}
+
+.burger-menu__nav {
+    transform: translateX(-400px);
+    position: fixed;
+    top: 70px;
+    left: -40px;
+    width: 275px;
+    height: 80vh;
+    background: #2D303A;
+    transition: all ease 0.5s;
+    box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
+    z-index: 99;
+}
+
+.burger-menu__nav--active {
+    transform: translateX(0);
+}
+
+.burger-menu__list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 71px;
+    margin-top: 122px;
+}
+
+.burger-menu__item {
+    transition: all ease 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+
+.burger-menu__item a {
+    margin: 0 8px;
+    padding: 0 7px;
+    font-family: 'Lato Bold', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.4px;
+}
+
+.burger-menu__item a.active,
+.burger-menu__item a:hover {
+    color: var(--color-active);
 }
 
 .logo {
@@ -668,6 +766,7 @@ textarea {
 .get-quote__container {
     display: flex;
     margin-top: 40px;
+    justify-content: space-between;
 }
 
 .form {
@@ -1103,6 +1202,10 @@ textarea {
 }
 
 @media screen and (max-width: 700px) {
+    .burger-menu {
+        display: block;
+    }
+
     .nav {
         display: none;
     }
