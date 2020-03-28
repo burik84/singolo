@@ -184,7 +184,7 @@ window.onclick = function(event) {
         modal.classList.add('hidden');
     }
     if (event.target == overlay) {
-        console.log('click');
+        // console.log('click');
         document.getElementsByClassName("burger-menu__nav")[0].classList.remove('burger-menu__nav--active');
         overlay.classList.add('hidden');
         BURGER.classList.remove('burger-menu--active');
