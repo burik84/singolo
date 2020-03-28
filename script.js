@@ -2,7 +2,6 @@
 const MENU = document.getElementById('menu');
 const burgerList = document.getElementById('burger-list');
 const BURGER = document.getElementById('burger-menu');
-
 const burgerMenu = document.getElementsByClassName("burger-menu")[0];
 
 // элементы для портфолио
@@ -64,7 +63,6 @@ function onScroll(event) {
         }
     });
 }
-
 
 // добавляем класс к tag при нажатии
 // И перемешиваем картинки
@@ -167,9 +165,8 @@ BUTTON.addEventListener('click', (e) => {
         document.getElementById('modal-describe').innerText = description ? `Описание: ${description}` : 'Без описания';
         modal.classList.remove('hidden');
     }
-
-
 });
+
 // закрытие модального окна
 // Закрытие по кнопке закрыть
 CLOSE_BUTTON.addEventListener('click', () => {

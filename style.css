@@ -159,14 +159,13 @@ textarea {
 }
 
 .overlay {
-    /* display: none; */
     position: absolute;
-    width: 100%;
-    height: 100%;
     left: 0px;
     top: 0px;
     right: 0;
     bottom: 0;
+    width: 100%;
+    height: 100%;
     background: #2D303A;
     opacity: 0.6;
     z-index: 10;
@@ -254,9 +253,9 @@ textarea {
 }
 
 .burger-menu__item {
+    margin-bottom: 27px;
     transition: all ease 0.5s;
     text-transform: uppercase;
-    margin-bottom: 27px;
 }
 
 .burger-menu__item a {
@@ -358,8 +357,6 @@ textarea {
 
 .slide {
     position: relative;
-    /* max-width: 483px;
-  width: 100%; */
     height: 100%;
 }
 
@@ -818,14 +815,14 @@ textarea {
 }
 
 .contacts {
+    margin-left: 20px;
     max-width: 300px;
     width: 100%;
-    margin-left: 20px;
 }
 
 .contacts__head {
-    padding-top: 2px;
     margin-bottom: 8px;
+    padding-top: 2px;
 }
 
 .contacts__descr {
@@ -857,8 +854,8 @@ textarea {
 }
 
 .contact__adress.adress::before {
-    background-image: url("./assets/img/icons/location.png");
     left: 3px;
+    background-image: url("./assets/img/icons/location.png");
 }
 
 .contact__adress.phone::before {
@@ -866,8 +863,8 @@ textarea {
 }
 
 .contact__adress.mail::before {
-    background-image: url("./assets/img/icons/mail.png");
     top: 7px;
+    background-image: url("./assets/img/icons/mail.png");
 }
 
 /* style Footer */
@@ -902,8 +899,8 @@ textarea {
 
 .social__icon--footer {
     margin-left: 8px;
-    line-height: 30px;
     margin-right: 0;
+    line-height: 30px;
 }
 
 .social__link--footer {
@@ -916,10 +913,10 @@ textarea {
 /* Стили модального окна */
 #modal {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
     top: 0;
     left: 0;
+    width: 100vw;
+    height: 100vh;
     background: #0008;
     z-index: 99;
 }
@@ -944,13 +941,13 @@ textarea {
 }
 
 .close {
-    padding: 10px;
-    font-size: 24px;
-    cursor: pointer;
     position: absolute;
     top: -30px;
     right: -30px;
+    padding: 10px;
+    font-size: 24px;
     color: var(--color-section-light);
+    cursor: pointer;
 }
 
 .modal__descr {
@@ -959,9 +956,9 @@ textarea {
 }
 
 .modal__button {
+    margin-bottom: 16px;
     width: 75%;
     height: 38px;
-    margin-bottom: 16px;
     border-radius: 5px;
     background-color: #d6564f;
     border: 1px solid transparent;
@@ -1095,8 +1092,8 @@ textarea {
     }
 
     .gallery {
-        grid-template-columns: repeat(3, 1fr);
         height: 794px;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .gallery__img {
@@ -1127,8 +1124,8 @@ textarea {
     }
 
     .card {
-        max-width: 219px;
         margin-right: 0;
+        max-width: 219px;
     }
 
     .card__title {
@@ -1167,12 +1164,11 @@ textarea {
 
     .contacts {
         max-width: 221px;
-        /* margin-left: 30px; */
     }
 
     .contacts__head {
-        padding-top: 2px;
         margin-bottom: 0px;
+        padding-top: 2px;
     }
 
     .contacts__descr {
@@ -1292,8 +1288,8 @@ textarea {
     }
 
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
         height: 554px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .gallery__item {
@@ -1344,9 +1340,9 @@ textarea {
     }
 
     .form__input--button {
-        cursor: pointer;
-        background-color: #fbc65f;
         margin-bottom: 0;
+        background-color: #fbc65f;
+        cursor: pointer;
     }
 
     .contacts {
