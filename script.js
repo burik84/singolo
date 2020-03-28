@@ -1,5 +1,9 @@
 // элементы для навигационного меню
 const MENU = document.getElementById('menu');
+const burgerList = document.getElementById('burger-list');
+const BURGER = document.getElementById('burger-menu');
+
+const burgerMenu = document.getElementsByClassName("burger-menu")[0];
 
 // элементы для портфолио
 const TAG = document.getElementById('tag');
@@ -24,9 +28,14 @@ const span = document.getElementsByClassName("close")[0];
 // добавляем класс к навигации при нажатии
 MENU.addEventListener('click', (event) => {
     MENU.querySelectorAll('a').forEach(elem => elem.classList.remove('active'));
-    // console.log(event.target);
     event.target.classList.add('active');
 });
+// добавляем класс к бургер кнопке для анимации
+BURGER.onclick = function() {
+    burgerMenu.classList.toggle('burger-menu--active');
+    document.getElementsByClassName("overlay")[0].classList.toggle('hidden');
+    document.getElementsByClassName("burger-menu__nav")[0].classList.toggle('burger-menu__nav--active');
+}
 // добавляем класс к навигации при скролле
 document.addEventListener('scroll', onScroll);
 
@@ -36,7 +45,7 @@ function onScroll(event) {
     // console.log(currentPosition);
     const sections = document.querySelectorAll('section');
     const links = document.querySelectorAll('#menu a');
-
+    const burgerLinks = document.querySelectorAll('#burger-list a');
     sections.forEach((el) => {
         // console.log(el.getAttribute('id'));
         if ((el.offsetTop - 100) <= currentPosition && (el.offsetTop + el.offsetHeight - 100) > currentPosition) {
@@ -46,8 +55,13 @@ function onScroll(event) {
                     a.classList.add('active');
                 }
             })
+            burgerLinks.forEach((a) => {
+                a.classList.remove('active');
+                if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+                    a.classList.add('active');
+                }
+            })
         }
-        console.log(currentPosition, el.offsetTop, el.offsetTop <= currentPosition, el.offsetTop + el.offsetHeight, (el.offsetTop + el.offsetHeight) > currentPosition);
     });
 }
 
@@ -55,7 +69,7 @@ function onScroll(event) {
 // добавляем класс к tag при нажатии
 // И перемешиваем картинки
 TAG.addEventListener('click', (event) => {
-    console.log(event.target);
+    // console.log(event.target);
     TAG.querySelectorAll('span').forEach(elem => elem.classList.remove('active'));
     event.target.classList.add('active');
     // console.log(galleryItem.length);
@@ -168,7 +182,14 @@ span.onclick = function() {
 }
 // Закрытие при клике вне модального окна
 window.onclick = function(event) {
+    const overlay = document.getElementsByClassName("overlay")[0];
     if (event.target == modal) {
         modal.classList.add('hidden');
+    }
+    if (event.target == overlay) {
+        console.log('click');
+        document.getElementsByClassName("burger-menu__nav")[0].classList.remove('burger-menu__nav--active');
+        overlay.classList.add('hidden');
+        BURGER.classList.remove('burger-menu--active');
     }
 }

@@ -2,293 +2,303 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./style.css">
-  <title>Singolo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Singolo</title>
 </head>
 
 <body>
-  <header class="header" id="home">
-    <div class="container">
-      <h1 class="logo"><a href="#">Singolo <span>*</span></a></h1>
-      <nav class="nav">
-        <ul class="nav-list" id="menu">
-          <li class="nav-list__item"><a href="#slider" class="active">Home</a></li>
-          <li class="nav-list__item"><a href="#services">Services</a></li>
-          <li class="nav-list__item"><a href="#portfolio">Portfolio</a></li>
-          <li class="nav-list__item"><a href="#about">About</a></li>
-          <li class="nav-list__item"><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <section class="slider" id="slider">
-    <div class="container">
-      <h2 class="hidden">Slider</h2>
-      <div class="slider-container ">
-        <div class="slider__item active">
-          <figure class="slide slide--vertical">
-            <img class="slide__img phone__shadow" src="./assets/img/slider/phone-vertical-shadow.png" alt="iPhone-Vertical">
-            <img class="slide__img phone__vertical" src="./assets/img/slider/phone-vertical.png" alt="iPhone-Vertical">
-            <img class="slide__img phone__display" src="./assets/img/slider/phone-vertical-display.png" alt="iPhone-Vertical">
-          </figure>
-          <figure class="slide slide--horizontal">
-            <img class="slide__img phone__shadow phone__shadow--horizontal" src="./assets/img/slider/phone-horizontal-shadow.png" alt="iPhone-horizontal">
-            <img class="slide__img phone__vertical phone__vertical--horizontal" src="./assets/img/slider/phone-horizontal.png" alt="iPhone-horizontal">
-            <img class="slide__img phone__display phone__display--horizontal" src="./assets/img/slider/phone-horizontal-display.png" alt="iPhone-horizontal">
-          </figure>
+    <div class="overlay hidden"></div>
+    <header class="header" id="home">
+        <div class="container">
+            <div class="burger-menu" id="burger-menu"><span></span></div>
+            <h1 class="logo"><a href="#">Singolo <span>*</span></a></h1>
+            <nav class="nav">
+                <ul class="nav-list" id="menu">
+                    <li class="nav-list__item"><a href="#slider" class="active">Home</a></li>
+                    <li class="nav-list__item"><a href="#services">Services</a></li>
+                    <li class="nav-list__item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-list__item"><a href="#about">About</a></li>
+                    <li class="nav-list__item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="burger-menu__nav">
+                <ul class="burger-menu__list" id="burger-list">
+                    <li class="burger-menu__item"><a href="#slider" class="active">Home</a></li>
+                    <li class="burger-menu__item"><a href="#services">Services</a></li>
+                    <li class="burger-menu__item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="burger-menu__item"><a href="#about">About</a></li>
+                    <li class="burger-menu__item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="slider__item">
-          <figure class="slide slide--one">
-            <img class="slide__img" src="./assets/img/slider/phone2.png" alt="iPhone-Vertical">
-          </figure>
-        </div>
-        <!-- /.slider-2 -->
-      </div>
-      <!-- /.slides -->
-
-      <div class="slider-control prev">
-        <div class="arrow left">
-          <!-- <img src="./assets/img/slider/icon-chev.png" alt=""> -->
-          <img src="./assets/img/slider/arrow.svg" alt="arrow-left">
-        </div>
-        <!-- /.arrow left -->
-      </div>
-      <div class="slider-control next">
-        <div class="arrow right">
-          <!-- <img src="./assets/img/slider/icon-chev.png" alt=""> -->
-          <img src="./assets/img/slider/arrow.svg" alt="arrow-right">
-        </div>
-        <!-- /.arrow right -->
-      </div>
-    </div>
-    <!-- /.container -->
-  </section>
-  <section class="services" id="services">
-    <div class="container">
-      <h2 class="services__head">Our services</h2>
-      <p class="lead">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-        condimentum nibh.</p>
-      <div class="items">
-        <div class="item item-1">
-          <h3 class="item__head">Custom design</h3>
-          <p class="item__lead">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-        </div>
-
-        <div class="item item-2">
-          <h3 class="item__head">Inovative ideas</h3>
-          <p class="item__lead">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-        </div>
-
-        <div class="item item-3">
-          <h3 class="item__head">Love is the answer</h3>
-          <p class="item__lead">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-        </div>
-
-        <div class="item item-4">
-          <h3 class="item__head">Responsive layout</h3>
-          <p class="item__lead">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
-        </div>
-
-        <div class="item item-5">
-          <h3 class="item__head">24 / 7 support</h3>
-          <p class="item__lead">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem.</p>
-        </div>
-
-        <div class="item item-6">
-          <h3 class="item__head">Feel like a star</h3>
-          <p class="item__lead">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="portfolio" id="portfolio">
-    <div class="container">
-      <h2 class="portfolio__head">Portfolio</h2>
-      <p class="lead">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-      <div class="tags" id="tag">
-        <span class="tags__item active">All</span><span class="tags__item">Web design</span><span class="tags__item">Graphic design</span><span class="tags__item">Artwork</span>
-      </div>
-      <div class="gallery" id="gallery">
-        <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-1.jpg" alt="image"></div>
-        <!-- /.gallery__item -->
-        <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-2.jpg" alt="image"></div>
-        <!-- /.gallery__item -->
-        <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-3.jpg" alt="image"></div>
-        <!-- /.gallery__item -->
-        <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-4.jpg" alt="image"></div>
-        <!-- /.gallery__item -->
-        <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-5.jpg" alt="image"></div>
-        <!-- /.gallery__item -->
-        <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-6.jpg" alt="image"></div>
-        <!-- /.gallery__item -->
-        <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-7.jpg" alt="image"></div>
-        <!-- /.gallery__item -->
-        <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-8.jpg" alt="image"></div>
-        <!-- /.gallery__item -->
-        <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-9.jpg" alt="image"></div>
-        <!-- /.gallery__item -->
-        <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-10.jpg" alt="image"></div>
-        <!-- /.gallery__item -->
-        <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-11.jpg" alt="image"></div>
-        <!-- /.gallery__item -->
-        <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-12.jpg" alt="image"></div>
-        <!-- /.gallery__item -->
-      </div>
-      <!-- /.images -->
-    </div>
-    <!-- /.container -->
-
-  </section>
-  <section class="about-us" id="about">
-    <div class="container">
-      <h2 class="about-us__head">About us</h2>
-      <p class="about-us__lead lead">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-        tortor mauris
-        condimentum nibh.</p>
-      <div class="cards">
-        <div class="card">
-          <div class="card__img">
-            <img src="./assets/img/photo/photo1.jpg" alt="photo">
-          </div>
-          <!-- /.card__img -->
-          <h3 class="card__title">Adam Jensen</h3>
-          <p class="card__descr">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-          <div class="social">
-            <div class="social__icon"><a href="#" class="social__link"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a></div>
-            <div class="social__icon">
-              <a href="#" class="social__link"><img src="./assets/img/social/google+.png" alt="logo google+"></a></div>
-            <div class="social__icon">
-              <a href="#" class="social__link"><img src="./assets/img/social/twitter.png" alt="logo twitter"></a></div>
-            <div class="social__icon">
-              <a href="#" class="social__link"><img src="./assets/img/social/linkedin.png" alt="logo linkedin"></a></div>
-          </div>
-          <!-- /.social -->
-        </div>
-        <!-- /.card -->
-        <div class="card">
-          <div class="card__img">
-            <img src="./assets/img/photo/photo2.jpg" alt="photo">
-          </div>
-          <!-- /.card__img -->
-          <h3 class="card__title">Desmond Miles</h3>
-          <p class="card__descr">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-          <!-- /.card__descr -->
-          <div class="social">
-            <div class="social__icon"><a href="#" class="social__link"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a></div>
-            <div class="social__icon">
-              <a href="#" class="social__link"><img src="./assets/img/social/google+.png" alt="logo google+"></a></div>
-            <div class="social__icon">
-              <a href="#" class="social__link"><img src="./assets/img/social/twitter.png" alt="logo twitter"></a></div>
-            <div class="social__icon">
-              <a href="#" class="social__link"><img src="./assets/img/social/linkedin.png" alt="logo linkedin"></a></div>
-          </div>
-          <!-- /.social -->
-        </div>
-        <!-- /.card -->
-        <div class="card">
-          <div class="card__img">
-            <img src="./assets/img/photo/photo3.jpg" alt="photo">
-          </div>
-          <!-- /.card__img -->
-          <h3 class="card__title">Scolara Visari</h3>
-          <p class="card__descr">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-          <!-- /.card__descr -->
-          <div class="social">
-            <div class="social__icon"><a href="#" class="social__link"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a></div>
-            <div class="social__icon">
-              <a href="#" class="social__link"><img src="./assets/img/social/google+.png" alt="logo google+"></a></div>
-            <div class="social__icon">
-              <a href="#" class="social__link"><img src="./assets/img/social/twitter.png" alt="logo twitter"></a></div>
-            <div class="social__icon">
-              <a href="#" class="social__link"><img src="./assets/img/social/linkedin.png" alt="logo linkedin"></a></div>
-          </div>
-          <!-- /.social -->
-        </div>
-        <!-- /.card -->
-      </div>
-      <!-- /.cards -->
-    </div>
-    <!-- /.container -->
-  </section>
-  <section class="get-quote" id="contact">
-    <div class="container">
-      <h2 class="get-quote__head">Get a Quote</h2>
-      <p class="get-quote__lead lead">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-        tortor mauris
-        condimentum nibh.</p>
-      <div class="get-quote__container">
-        <div class="get-quote__form">
-          <form class="form" id="form" action method="post">
-            <div class="form__input">
-              <input type="text" name="name" value="" id="form-name" placeholder="Name (Required)" required>
+    </header>
+    <section class="slider" id="slider">
+        <div class="container">
+            <h2 class="hidden">Slider</h2>
+            <div class="slider-container ">
+                <div class="slider__item active">
+                    <figure class="slide slide--vertical">
+                        <img class="slide__img phone__shadow" src="./assets/img/slider/phone-vertical-shadow.png" alt="iPhone-Vertical">
+                        <img class="slide__img phone__vertical" src="./assets/img/slider/phone-vertical.png" alt="iPhone-Vertical">
+                        <img class="slide__img phone__display" src="./assets/img/slider/phone-vertical-display.png" alt="iPhone-Vertical">
+                    </figure>
+                    <figure class="slide slide--horizontal">
+                        <img class="slide__img phone__shadow phone__shadow--horizontal" src="./assets/img/slider/phone-horizontal-shadow.png" alt="iPhone-horizontal">
+                        <img class="slide__img phone__vertical phone__vertical--horizontal" src="./assets/img/slider/phone-horizontal.png" alt="iPhone-horizontal">
+                        <img class="slide__img phone__display phone__display--horizontal" src="./assets/img/slider/phone-horizontal-display.png" alt="iPhone-horizontal">
+                    </figure>
+                </div>
+                <div class="slider__item">
+                    <figure class="slide slide--one">
+                        <img class="slide__img" src="./assets/img/slider/phone2.png" alt="iPhone-Vertical">
+                    </figure>
+                </div>
+                <!-- /.slider-2 -->
+                <div class="slider-control prev">
+                    <div class="arrow left">
+                        <!-- <img src="./assets/img/slider/icon-chev.png" alt=""> -->
+                        <img src="./assets/img/slider/arrow.svg" alt="arrow-left">
+                    </div>
+                    <!-- /.arrow left -->
+                </div>
+                <div class="slider-control next">
+                    <div class="arrow right">
+                        <!-- <img src="./assets/img/slider/icon-chev.png" alt=""> -->
+                        <img src="./assets/img/slider/arrow.svg" alt="arrow-right">
+                    </div>
+                    <!-- /.arrow right -->
+                </div>
             </div>
-            <div class="form__input">
-              <input type="email" name="email-address" id="form-mail" value="" placeholder="Email (Required)" required>
-            </div>
-            <div class="form__input">
-              <input type="text" name="subject" id="form-subject" value="" placeholder="Subject">
-            </div>
-            <div class="form__input  form__input--descr">
-              <textarea name="name" id="form-descr" rows="8" cols="80" placeholder="Describe your project in detail..."></textarea>
-            </div>
-            <div class="form__input  form__input--button">
-              <input type="submit" value="отправить" id="btn">
-            </div>
-          </form>
+            <!-- /.slides -->
         </div>
-        <!-- /.get-quote__forms -->
-        <div class="contacts">
-          <h3 class="contacts__head">Contact Information</h3>
-          <p class="contacts__descr">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
-            consequat
-            felis. </p>
-          <ul class="contacts__adress">
-            <li class="contact__adress adress">Elm St. 14/05 Lost City </li>
-            <li class="contact__adress phone"><a class="contact__link" href="tel:03528 331 86 35">03528 331 86 35</a></li>
-            <!-- /.contact__adress phone -->
-            <li class="contact__adress mail"><a class="contact__link" href="mailto:info@singolo.com">info@singolo.com</a></li>
-          </ul>
-        </div>
-        <!-- /.get-quote__forms -->
-      </div>
-    </div>
-    <!-- /.container -->
-    <div id="modal" class="hidden">
-      <div id="modal-content">
-        <div class="modal__close">
-          <span class="close">&times;</span>
-        </div>
-        <!-- /.modal__block -->
-        <h3 class="modal__descr">Письмо отправлено</h3>
-        <p class="modal__descr"><span id="modal-subject"></span></p>
-        <p class="modal__descr"><span id="modal-describe"></span></p>
-        <button class="modal__button" type="button" name="button" id="close-btn">ОК</button>
-      </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__copy">
-        <p> &copy; Copyright 2013 <span class="footer__copy--item">by PSDchat.com</span></p>
-      </div>
-      <div class="footer__social social">
-        <div class="social__icon social__icon--footer"><a href="#" class="social__link social__link--footer"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a></div>
-        <div class="social__icon social__icon--footer">
-          <a href="#" class="social__link"><img src="./assets/img/social/google+.png" alt="logo google+"></a></div>
-        <div class="social__icon social__icon--footer">
-          <a href="#" class="social__link"><img src="./assets/img/social/twitter.png" alt="logo twitter"></a></div>
-        <div class="social__icon social__icon--footer">
-          <a href="#" class="social__link"><img src="./assets/img/social/linkedin.png" alt="logo linkedin"></a></div>
-      </div>
-      <!-- /.social -->
-    </div>
-    <!-- /.container -->
-  </footer>
+        <!-- /.container -->
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="services__head">Our services</h2>
+            <p class="lead">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh.</p>
+            <div class="items">
+                <div class="item item-1">
+                    <h3 class="item__head">Custom design</h3>
+                    <p class="item__lead">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                </div>
 
-  <script src="./script.js" charset="utf-8"></script>
+                <div class="item item-2">
+                    <h3 class="item__head">Inovative ideas</h3>
+                    <p class="item__lead">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                </div>
+
+                <div class="item item-3">
+                    <h3 class="item__head">Love is the answer</h3>
+                    <p class="item__lead">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                </div>
+
+                <div class="item item-4">
+                    <h3 class="item__head">Responsive layout</h3>
+                    <p class="item__lead">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+                </div>
+
+                <div class="item item-5">
+                    <h3 class="item__head">24 / 7 support</h3>
+                    <p class="item__lead">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem.</p>
+                </div>
+
+                <div class="item item-6">
+                    <h3 class="item__head">Feel like a star</h3>
+                    <p class="item__lead">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="portfolio__head">Portfolio</h2>
+            <p class="lead">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            <div class="tags" id="tag">
+                <span class="tags__item active">All</span><span class="tags__item">Web design</span><span class="tags__item">Graphic design</span><span class="tags__item">Artwork</span>
+            </div>
+            <div class="gallery" id="gallery">
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-1.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-2.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-3.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-4.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-5.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-6.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-7.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-8.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-9.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-10.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-11.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+                <div class="gallery__item"><img class="gallery__img" src="./assets/img/portfolio/portfolio-12.jpg" alt="image"></div>
+                <!-- /.gallery__item -->
+            </div>
+            <!-- /.images -->
+        </div>
+        <!-- /.container -->
+
+    </section>
+    <section class="about-us" id="about">
+        <div class="container">
+            <h2 class="about-us__head">About us</h2>
+            <p class="about-us__lead lead">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+                tortor mauris
+                condimentum nibh.</p>
+            <div class="cards">
+                <div class="card">
+                    <div class="card__img">
+                        <img src="./assets/img/photo/photo1.jpg" alt="photo">
+                    </div>
+                    <!-- /.card__img -->
+                    <h3 class="card__title">Adam Jensen</h3>
+                    <p class="card__descr">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                    <div class="social">
+                        <div class="social__icon"><a href="#" class="social__link"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/google+.png" alt="logo google+"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/twitter.png" alt="logo twitter"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/linkedin.png" alt="logo linkedin"></a></div>
+                    </div>
+                    <!-- /.social -->
+                </div>
+                <!-- /.card -->
+                <div class="card">
+                    <div class="card__img">
+                        <img src="./assets/img/photo/photo2.jpg" alt="photo">
+                    </div>
+                    <!-- /.card__img -->
+                    <h3 class="card__title">Desmond Miles</h3>
+                    <p class="card__descr">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    <!-- /.card__descr -->
+                    <div class="social">
+                        <div class="social__icon"><a href="#" class="social__link"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/google+.png" alt="logo google+"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/twitter.png" alt="logo twitter"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/linkedin.png" alt="logo linkedin"></a></div>
+                    </div>
+                    <!-- /.social -->
+                </div>
+                <!-- /.card -->
+                <div class="card">
+                    <div class="card__img">
+                        <img src="./assets/img/photo/photo3.jpg" alt="photo">
+                    </div>
+                    <!-- /.card__img -->
+                    <h3 class="card__title">Scolara Visari</h3>
+                    <p class="card__descr">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                    <!-- /.card__descr -->
+                    <div class="social">
+                        <div class="social__icon"><a href="#" class="social__link"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/google+.png" alt="logo google+"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/twitter.png" alt="logo twitter"></a></div>
+                        <div class="social__icon">
+                            <a href="#" class="social__link"><img src="./assets/img/social/linkedin.png" alt="logo linkedin"></a></div>
+                    </div>
+                    <!-- /.social -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.cards -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <section class="get-quote" id="contact">
+        <div class="container">
+            <h2 class="get-quote__head">Get a Quote</h2>
+            <p class="get-quote__lead lead">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+                tortor mauris
+                condimentum nibh.</p>
+            <div class="get-quote__container">
+                <div class="get-quote__form">
+                    <form class="form" id="form" action method="post">
+                        <div class="form__input">
+                            <input type="text" name="name" value="" id="form-name" placeholder="Name (Required)" required>
+                        </div>
+                        <div class="form__input">
+                            <input type="email" name="email-address" id="form-mail" value="" placeholder="Email (Required)" required>
+                        </div>
+                        <div class="form__input">
+                            <input type="text" name="subject" id="form-subject" value="" placeholder="Subject">
+                        </div>
+                        <div class="form__input  form__input--descr">
+                            <textarea name="name" id="form-descr" rows="8" cols="80" placeholder="Describe your project in detail..."></textarea>
+                        </div>
+                        <div class="form__input  form__input--button">
+                            <input type="submit" value="отправить" id="btn">
+                        </div>
+                    </form>
+                </div>
+                <!-- /.get-quote__forms -->
+                <div class="contacts">
+                    <h3 class="contacts__head">Contact Information</h3>
+                    <p class="contacts__descr">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
+                        consequat
+                        felis. </p>
+                    <ul class="contacts__adress">
+                        <li class="contact__adress adress">Elm St. 14/05 Lost City </li>
+                        <li class="contact__adress phone"><a class="contact__link" href="tel:03528 331 86 35">03528 331 86 35</a></li>
+                        <!-- /.contact__adress phone -->
+                        <li class="contact__adress mail"><a class="contact__link" href="mailto:info@singolo.com">info@singolo.com</a></li>
+                    </ul>
+                </div>
+                <!-- /.get-quote__forms -->
+            </div>
+        </div>
+        <!-- /.container -->
+        <div id="modal" class="hidden">
+            <div id="modal-content">
+                <div class="modal__close">
+                    <span class="close">&times;</span>
+                </div>
+                <!-- /.modal__block -->
+                <h3 class="modal__descr">Письмо отправлено</h3>
+                <p class="modal__descr"><span id="modal-subject"></span></p>
+                <p class="modal__descr"><span id="modal-describe"></span></p>
+                <button class="modal__button" type="button" name="button" id="close-btn">ОК</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copy">
+                <p> &copy; Copyright 2013 <span class="footer__copy--item">by PSDchat.com</span></p>
+            </div>
+            <div class="footer__social social">
+                <div class="social__icon social__icon--footer"><a href="#" class="social__link social__link--footer"><img src="./assets/img/social/facebook.png" alt="logo facebook"></a></div>
+                <div class="social__icon social__icon--footer">
+                    <a href="#" class="social__link"><img src="./assets/img/social/google+.png" alt="logo google+"></a></div>
+                <div class="social__icon social__icon--footer">
+                    <a href="#" class="social__link"><img src="./assets/img/social/twitter.png" alt="logo twitter"></a></div>
+                <div class="social__icon social__icon--footer">
+                    <a href="#" class="social__link"><img src="./assets/img/social/linkedin.png" alt="logo linkedin"></a></div>
+            </div>
+            <!-- /.social -->
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <script src="./script.js" charset="utf-8"></script>
 </body>
 
 </html>
