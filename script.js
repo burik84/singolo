@@ -1,4 +1,5 @@
 // элементы для навигационного меню
+const overlay = document.getElementsByClassName("overlay")[0];
 const MENU = document.getElementById('menu');
 const burgerList = document.getElementById('burger-list');
 const BURGER = document.getElementById('burger-menu');
@@ -34,7 +35,17 @@ BURGER.onclick = function() {
     burgerMenu.classList.toggle('burger-menu--active');
     document.getElementsByClassName("overlay")[0].classList.toggle('hidden');
     document.getElementsByClassName("burger-menu__nav")[0].classList.toggle('burger-menu__nav--active');
+
 }
+// Скрываем бургер меню при нажатии ссылки
+burgerList.addEventListener('click', (event) => {
+    // console.log(event.target);
+    document.getElementsByClassName("burger-menu__nav")[0].classList.remove('burger-menu__nav--active');
+    overlay.classList.add('hidden');
+    BURGER.classList.remove('burger-menu--active');
+});
+
+
 // добавляем класс к навигации при скролле
 document.addEventListener('scroll', onScroll);
 
@@ -72,10 +83,22 @@ TAG.addEventListener('click', (event) => {
     event.target.classList.add('active');
     // console.log(galleryItem.length);
     // Меняем порядок для картинок
-    for (var i = 0; i < galleryItem.length; i++) {
-        // console.log(Math.round(Math.random() * 50));
-        galleryItem[i].style.order = Math.round(Math.random() * 50);
-    }
+    // for (var i = 0; i < galleryItem.length; i++) {
+    //     // console.log(Math.round(Math.random() * 50));
+    //     galleryItem[i].style.order = Math.round(Math.random() * 50);
+    // }
+    // Новый порядок без ордер
+    const copyGalleryItem = [...galleryItem];
+    const firstGalleryItem = copyGalleryItem[0]
+    const nextGalleryItem = copyGalleryItem.slice(1)
+    // console.log(copyGalleryItem, firstGalleryItem, nextGalleryItem);
+    const newGalleryItem = nextGalleryItem.concat(firstGalleryItem);
+    // console.log(newGalleryItem);
+    let galleryFragment = document.createDocumentFragment();
+    newGalleryItem.forEach((item) => galleryFragment.append(item));
+    // console.log(newGalleryItem, galleryFragment);
+    GALLERY.innerHTML = '';
+    GALLERY.append(galleryFragment);
 });
 
 // Скрываем изображение картинки на телефонах
@@ -179,7 +202,6 @@ span.onclick = function() {
 }
 // Закрытие при клике вне модального окна
 window.onclick = function(event) {
-    const overlay = document.getElementsByClassName("overlay")[0];
     if (event.target == modal) {
         modal.classList.add('hidden');
     }

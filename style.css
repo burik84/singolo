@@ -367,38 +367,38 @@ textarea {
 .phone__shadow {
     z-index: 1;
     top: 54px;
-    left: 72px;
+    left: -398px;
 }
 
 .phone__vertical {
     z-index: 2;
     top: 54px;
-    left: 72px;
+    left: -398px;
     cursor: pointer;
 }
 
 .phone__display {
     z-index: 3;
     top: 119px;
-    left: 86px;
+    left: -384px;
 }
 
 .phone__shadow--horizontal {
     z-index: 1;
     top: 174px;
-    left: -554px;
+    left: -84px;
 }
 
 .phone__vertical--horizontal {
     z-index: 2;
     top: 174px;
-    left: -554px;
+    left: -84px;
 }
 
 .phone__display--horizontal {
     z-index: 3;
     top: 188px;
-    left: -494px;
+    left: -24px;
 }
 
 /* Новые стили для слайдера */
@@ -420,7 +420,7 @@ textarea {
 .slider__item.next {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .slider__item.next {
@@ -1009,32 +1009,32 @@ textarea {
 
     .phone__shadow {
         top: 42px;
-        left: 54px;
+        left: -298px;
     }
 
     .phone__vertical {
         top: 42px;
-        left: 54px;
+        left: -300px;
     }
 
     .phone__display {
         top: 90px;
-        left: 64px;
+        left: -290px;
     }
 
     .phone__shadow--horizontal {
         top: 134px;
-        left: -418px;
+        left: -64px;
     }
 
     .phone__vertical--horizontal {
         top: 134px;
-        left: -418px;
+        left: -64px;
     }
 
     .phone__display--horizontal {
         top: 144px;
-        left: -372px;
+        left: -20px;
     }
 
     .arrow.left {
@@ -1242,24 +1242,34 @@ textarea {
         max-width: 190px;
     }
 
-    .phone__shadow, .phone__vertical {
-        top: 22px;
-        left: 42px;
+    .phone__shadow {
+        top: 20px;
+        left: -146px;
+    }
+
+    .phone__vertical {
+        top: 19px;
+        left: -148px;
     }
 
     .phone__display {
-        top: 46px;
-        left: 47px;
+        top: 42px;
+        left: -142px;
     }
 
-    .phone__shadow--horizontal, .phone__vertical--horizontal {
+    .phone__shadow--horizontal {
         top: 66px;
-        left: -230px;
+        left: -32px;
+    }
+
+    .phone__vertical--horizontal {
+        top: 66px;
+        left: -32px;
     }
 
     .phone__display--horizontal {
         top: 71px;
-        left: -208px;
+        left: -10px;
     }
 
     .services__head {
@@ -1422,36 +1432,6 @@ textarea {
 
     .slide--one .slide__img {
         max-width: 190px;
-    }
-
-    .phone__shadow {
-        top: 20px;
-        left: 12px;
-    }
-
-    .phone__vertical {
-        top: 18px;
-        left: 10px;
-    }
-
-    .phone__display {
-        top: 42px;
-        left: 15px;
-    }
-
-    .phone__shadow--horizontal {
-        top: 66px;
-        left: -190px;
-    }
-
-    .phone__vertical--horizontal {
-        top: 66px;
-        left: -190px;
-    }
-
-    .phone__display--horizontal {
-        top: 71px;
-        left: -168px;
     }
 
     .arrow.left {
