@@ -227,14 +227,13 @@ textarea {
     transform: rotate(90deg);
     transform-origin: top;
 }
-
 .burger-menu__nav {
     transform: translateX(-400px);
     position: fixed;
     top: 70px;
     left: -40px;
     width: 275px;
-    height: 80vh;
+    height: 100vh;
     background: #2D303A;
     transition: all ease 0.5s;
     box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
@@ -969,7 +968,7 @@ textarea {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1010px) {
     .slider {
         height: 452px;
     }
@@ -1057,6 +1056,7 @@ textarea {
 
     .items {
         margin-top: 32px;
+        justify-content: center;
     }
 
     .item__head {
@@ -1114,7 +1114,7 @@ textarea {
     }
 }
 
-@media screen and (min-width: 768px)and (max-width: 1020px) {
+@media screen and (min-width: 768px)and (max-width: 1010px) {
     .about-us__head {
         margin-top: 56px;
     }
@@ -1562,5 +1562,22 @@ textarea {
 
     .footer__social {
         margin-top: 23px;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .about-us{
+        height: 1570px;
+    }
+    .tags__item{
+        margin-right: 2px;
+        padding: 2px 2px;
+    }
+    .gallery__img{
+        width: 120px;
+        height: 120px;
+    }
+    .lead {
+        line-height: 24px;
     }
 }
